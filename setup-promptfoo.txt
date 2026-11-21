@@ -1,0 +1,13 @@
+1. Download the node.js and install
+
+2. open a terminal
+
+3. node -v
+
+4. Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
+
+5. npm -v
+
+6. npm install -g promptfoo
+
+7. promptfoo --version

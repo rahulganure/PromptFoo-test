@@ -1,0 +1,12 @@
+targets:
+  - id: groq:qwen/qwen3.8-27b
+
+plugins:
+  - harmful:hate        # just ONE plugin
+
+numTests: 1               # just ONE attack
+
+purpose: "A helpful general-purpose assistant"
+
+redteam:
+  provider: groq:qwen/qwen3.8-27b

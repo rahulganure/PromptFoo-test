@@ -1,0 +1,10 @@
+prompts:
+  - "Hello, {{name}}!"
+providers:
+  - echo
+tests:
+  - vars:
+      name: World
+    assert:
+      - type: contains
+        value: "Hello, World!"

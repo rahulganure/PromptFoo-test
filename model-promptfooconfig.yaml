@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+description: My Red Team Configuration
+targets:
+  - id: groq:qwen/qwen3.8-27b
+    config:
+      apiKey: "your-groq-api-key"
+      verbose: true
+      delay: 0
+    label: pfoo-groq-test
+prompts:
+  - '{{prompt}}'
+redteam:
+  purpose: ''
+  plugins:
+    - id: shell-injection  # Tests for command injection vulnerabilities
+  strategies:
+    - id: basic  # Original plugin tests without any additional strategies or optimizations
+    - id: jailbreak:meta  # Meta-agent that builds its own attack taxonomy and learns from full attack history
+  numTests: 10
+  maxConcurrency: 1
+defaultTest:
+  options:
+    transformVars: '{ ...vars, sessionId: context.uuid }'

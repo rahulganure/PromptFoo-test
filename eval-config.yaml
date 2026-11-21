@@ -1,0 +1,7 @@
+prompts:
+  - "Say hello to {{name}}"
+providers:
+  - groq:qwen/qwen3.8-27b
+tests:
+  - vars:
+      name: Alice
