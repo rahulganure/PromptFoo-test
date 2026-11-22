@@ -11,3 +11,11 @@
 6. npm install -g promptfoo
 
 7. promptfoo --version
+
+9. You can also create the promptfoo key and orgainization with our profile. @ www.promptfoo.app
+
+8. promptfoo eval -c <config_filename.yaml>
+
+9. promptfoo redteam run <config_filename.yaml>
+
+10. promptfoo view  (to get a UI enabled app to look at the all the eval results and red team results . You can also create yaml for eval and redteam runs here)
